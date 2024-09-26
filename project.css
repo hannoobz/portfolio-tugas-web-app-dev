@@ -47,14 +47,11 @@
 }
 
 #projects li:hover {
-    animation: glowingFade 1s alternate infinite;
+    animation: glowingFade 1s ease-in-out alternate infinite;
 }
 
 @keyframes glowingFade {
-    0%{
-        box-shadow: 0 0 2px 0 #05FFC3;
-    }
 	100% {
-		box-shadow: 0 0 25px 5px #05FFC3;
+		box-shadow: 0 0 15px 2px #05FFC3;
 	}
 }
