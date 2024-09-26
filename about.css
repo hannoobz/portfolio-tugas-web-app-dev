@@ -22,8 +22,8 @@
     display: flex;
     justify-content: center;
     gap: 5rem;
-    animation: below 1.5s ease-in-out alternate infinite;
-    background: linear-gradient(to bottom, #000000 0%, #003029 70%, #027f6c 100%);
+    animation: below 1.25s ease-in-out alternate infinite;
+    background: linear-gradient(to bottom, #000000 0%, #003029 60%, #027f6c 100%);
 }
 
 @keyframes below {
@@ -62,6 +62,4 @@
         margin-bottom: 3rem;
     }
 
-    #contact {
-    }
   }
