@@ -4,7 +4,21 @@
     object-fit: contain;
 }
 
-#myPhoto {
+#myPhotoWrap {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+#hiddenPhotoWrap {
+    width: 300px;
+    height: 300px;
+    margin-top: 10rem;
+    object-fit: contain;
+    display: none;
+}
+
+.myPhoto {
     display: block;
     min-width: 10rem;
     width: 100%;
@@ -17,7 +31,7 @@
     align-items: center;
     margin-right: 5%;
     margin-left: 5%;
-    margin-top: 15rem;
+    height: 100vh;
 }
 
 #introPageText {
@@ -35,3 +49,37 @@
 }
 
 
+@media screen and (max-width: 1280px) {
+    #intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 5%;
+        margin-left: 5%;
+        height: auto;
+    }
+
+    #introPageText {
+        text-align: center;
+        margin-right: 0;
+    }
+
+    #myPhotoWrap {
+        display: none;
+    }
+    
+    #hiddenPhotoWrap {
+        display: block;
+    }
+
+    #introPageText h1 {
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    
+    #intro h2 {
+        font-size: 1.125rem;
+    }
+
+}

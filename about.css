@@ -1,12 +1,15 @@
+
 #about {
     text-align: center;
-    margin-top: 7.5rem;
+    margin-top: 15rem;
+    margin-bottom: 15rem;
     margin-right: 15%;
     margin-left: 15%;
 }
 
 #about h1 {
     font-size: 3rem;
+    padding-top: 3rem;
 }
 
 #about p {
@@ -32,3 +35,23 @@
     align-items: center;
     margin-bottom: 1rem;
 }
+
+@media screen and (max-width: 1280px) {
+    #about h1 {
+        font-size: 2rem;
+    }
+    
+    #about p {
+        font-size: 1rem;
+    }
+
+    #about {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    #contact {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+  }

@@ -1,37 +1,170 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>hanieffn portfolio - home</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="home.css" />
-        <link rel="stylesheet" href="styles.css" />
-    </head>
 
-    <body>
-        <nav>
-            <a id="active" href="/"><span>#</span>home</a>
-            <a href="project.html"><span>#</span>project</a>
-            <a href="education.html#lol"><span>#</span>education</a>
-            <a href="about.html"><span>#</span>about</a>
-        </nav>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+    name="description"
+    content="Hanief Fatkhan portfolio website.">
+	<title>hanieffn portfolio</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="home.css" />
+	<link rel="stylesheet" href="project.css" />
+	<link rel="stylesheet" href="education.css" />
+    <link rel="stylesheet" href="about.css" />
+	<link rel="stylesheet" href="styles.css" />
+</head>
 
-        <main>
-            <section id="intro">
-                <div id="introPageText">
-                    <h1>Hello, I am Hanif</h1>
-                    <h2>An Engineering Major Dropout</h2>
-                </div>
-                <div id="myPhotoWrap">
-                    <img src="photo.jpeg" alt="hanieffn's photo" id="myPhoto" />
-                </div>
-            </section>
-        </main>
-    </body>
+<body>
+	<nav>
+		<a href="#intro"><span>#</span>home</a>
+		<a href="#projects"><span>#</span>project</a>
+		<a href="#education"><span>#</span>education</a>
+		<a href="#about"><span>#</span>about</a>
+	</nav>
+
+	<main>
+		<section id="intro">
+            <div id="hiddenPhotoWrap">
+				<img src="photo.jpeg" alt="hanieffn's photo" class="myPhoto" />
+			</div>
+			<div id="introPageText">
+				<h1>Hello, I am Hanif</h1>
+				<h2>An Engineering Major Dropout</h2>
+			</div>
+			<div id="myPhotoWrap">
+				<img src="photo.jpeg" alt="hanieffn's photo" class="myPhoto" />
+			</div>
+		</section>
+		<section id="projects">
+			<h1>My Projects</h1>
+            <div id="projectsWrapper">
+                <ul>
+                    <li>
+					<h2>Content-Based Image Retrieval (CBIR) Web App</h2>
+					<img src="https://raw.githubusercontent.com/hannoobz/Algeo02-22065/refs/heads/main/img/elaina1.png"
+						alt="CBIR Web App" class="projectImage" />
+                        <p>
+                            This project is a Content-Based Image Retrieval
+                            (CBIR) web application built with Python using Flask
+                            and styled with Tailwind CSS. The application allows
+                            users to search and retrieve images based on their
+						visual content rather than text or keywords.
+					</p>
+					<a href="https://github.com/hannoobz/Algeo02-22065">Project Link</a>
+				</li>
+				<li>
+                    <h2>Linktree Clone</h2>
+					<img src="https://raw.githubusercontent.com/hannoobz/Hands-on-Day2-Training-ARC/refs/heads/main/cropped.png"
+                    alt="Linktree Clone" class="projectImage" />
+					<p>
+                        This project is a personal clone of Linktree,
+						developed using only HTML, CSS, and JavaScript. The
+						application serves as a customized landing page to
+						showcase my own links, making it easy to share my
+						work and projects in one place.
+					</p>
+					<a href="https://hannoobz.github.io/Hands-on-Day2-Training-ARC/">
+                        Project Link</a>
+				</li>
+				<li>
+					<h2>Web Reconstruction (On going)</h2>
+					<img src="unnanouncedproj.png" alt="Web reconstruction" class="projectImage" />
+					<p>
+                        This project involves reconstructing the KM ITB
+						website, which serves as an information hub for the
+						student community at ITB. As a frontend developer, I
+						translated Figma designs into responsive web pages
+						and implemented interactive features.
+					</p>
+				</li>
+			</ul>
+        </div>
+		</section>
+		<section id="education">
+			<h2>Education</h2>
+			<div class="checkbox-container">
+				<input type="checkbox" id="check">
+				<label for="check" class="checkbtn">
+					<a>Click here hehe</a>
+				</label>
+				<div id="lol">
+					<ul>
+						<li>
+							<h3>I Magically Spawned</h3>
+							<p><time datetime="2021">2021</time></p>
+							<p>
+								I just magically spawned here in this world with the
+								knowledge and education of an Indonesian high schooler.
+							</p>
+						</li>
+						<li>
+							<h3>Random Uni in Yogyakarta</h3>
+							<p><time datetime="2021-2022">2021 - 2022</time></p>
+							<p>
+								After I spawned in this world, I was automatically enrolled
+								in this uni. I left and probably got dropped.
+							</p>
+						</li>
+						<li>
+							<h3>Institut Teknologi Bandung</h3>
+							<p><time datetime="2022-present">2022 - present</time></p>
+							<p>
+								I decided to get accepted at Institut Teknologi Bandung,
+								majoring in Informatics.
+							</p>
+						</li>
+					</ul>
+				</div>
+				<div id="no-horsing-around">
+					<ul>
+						<li>
+							<h3>SMAN 8 Yogyakarta</h3>
+							<p>Mathematics and Natural Sciences</p>
+							<p><time datetime="2018-2021">2018 - 2021</time></p>
+						</li>
+						<li>
+							<h3>Universitas Gadjah Mada</h3>
+							<p>Engineering Physics</p>
+							<p><time datetime="2021-2022">2021 - 2022</time></p>
+							<p>Completed coursework in Engineering Physics before withdrawing.</p>
+						</li>
+						<li>
+							<h3>Institut Teknologi Bandung</h3>
+							<p>Informatics</p>
+							<p><time datetime="2022-present">2022 - present</time></p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+        <section id="about">
+            <h1>About Me</h1>
+            <p>
+                Hello, I am Hanif. I am a 3rd-year informatics student from Institut
+                Teknologi Bandung. Currently, I'm still exploring random paths in
+                IT, like web development, AI, and software engineering. Most of my
+                time is spent playing video games like CS2, doing some LeetCode or
+                Codeforces problems, copying someone else's CF solution, or just
+                making some low-quality jokes like this. Feel free to contact me :D
+            </p>
+        </section>
+        <section id="contact">
+            <h2>Contact me on</h2>
+            <ul>
+                <li>
+                    <a href="https://github.com/hannoobz">GitHub</a>
+                </li>
+                <li>
+                    <a href="mailto:13522100@std.stei.itb.ac.id">Gmail</a>
+                </li>
+            </ul>
+        </section>
+	</main>
+</body>
+
 </html>

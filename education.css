@@ -1,6 +1,13 @@
+#education {
+    margin-right: 5%;
+    margin-left: 5%;
+    display: block;
+    height: 100vh;
+}
+
 #education h2{
     text-align: center;
-    margin-top: 4rem;
+    padding-top: 7.5rem;
     font-size: 3rem;
 }
 
@@ -17,24 +24,41 @@
     font-size: 1.5rem;
 }
 
-#education .hehe {
+
+#check {
+    display: none;
+  }
+
+.checkbox-container .checkbtn {
     display: flex;
-    justify-content: flex-end;
-    margin-left: 10%;
+    justify-content: end;
+    align-items: end;
     margin-right: 10%;
 }
+#no-horsing-around {
+    display: none;;
+}
 
-#lol, #no-horsing-around {
+
+#check:checked ~ #no-horsing-around {
+    display: block;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+#check:checked ~ #lol {
     display: none;
 }
 
-#lol:target, #no-horsing-around:target {
+#lol {
     display: block;
     animation: fadeInAnimation ease 1s;
-	animation-iteration-count: 1;
-	animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-fill-mode: forward
+    
 }
-
 
 @keyframes fadeInAnimation {
 	0% {
@@ -46,3 +70,29 @@
 		transform: translateY(0);
 	}
 }
+
+@media screen and (max-width: 1280px) {
+    #education {
+        height: auto;
+        margin-right: 2.5%;
+        margin-left: 2.5%;
+    }
+
+    .checkbtn a{
+        max-width: 10rem;
+        font-size: .75rem;
+    }
+
+    #education h3 {
+        font-size: 1rem;
+    }
+
+    #education h2{
+        font-size: 1.75rem;
+    }
+
+    #education ul {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+  }
