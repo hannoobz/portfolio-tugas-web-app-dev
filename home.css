@@ -1,0 +1,37 @@
+#myPhotoWrap {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+#myPhoto {
+    display: block;
+    min-width: 10rem;
+    width: 100%;
+    height: auto;
+}
+
+#intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 15rem;
+}
+
+#introPageText {
+    text-align: left;
+    margin-right: 5%;
+}
+
+#introPageText h1 {
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+#intro h2 {
+    font-size: 2.25rem;
+}
+
+

@@ -1,0 +1,61 @@
+html {
+    background: black;
+    color: white;
+    font-family: "JetBrains Mono";
+}
+
+nav {
+    text-align: right;
+    margin-right: 2rem;
+    font-size: 2.25rem;
+}
+
+main {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+a {
+    text-decoration: none;
+    color: #05ffc3;
+}
+
+a span {
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
+
+a:visited:hover {
+    color: white;
+}
+
+a:visited {
+    color: #05ffc3;
+}
+
+a:visited span {
+    color: white;
+}
+
+a#active {
+    color: white;
+}
+
+a:visited#active {
+    color: white;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,60 @@
+
+#projects h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#projects ul {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#projects li h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100px;
+}
+
+#projects li img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#projects li {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    list-style: none;
+    background-color: #111111;
+    padding: 1.5rem;
+    border-radius: 2rem;
+}
+
+#projects li a {
+    display: flex;
+    align-self: flex-end;
+    margin-top: auto;
+}
+
+#projects .projectImage {
+    height: 15rem;
+    width: auto;
+}
+
+#projects li:hover {
+    animation: glowingFade 1s alternate infinite;
+}
+
+@keyframes glowingFade {
+    0%{
+        box-shadow: 0 0 2px 0 #05FFC3;
+    }
+	100% {
+		box-shadow: 0 0 25px 5px #05FFC3;
+	}
+}
