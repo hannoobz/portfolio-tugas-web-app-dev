@@ -5,6 +5,7 @@
     margin-bottom: 15rem;
     margin-right: 15%;
     margin-left: 15%;
+
 }
 
 #about h1 {
@@ -21,6 +22,17 @@
     display: flex;
     justify-content: center;
     gap: 5rem;
+    animation: below 1.5s ease-in-out alternate infinite;
+    background: linear-gradient(to bottom, #000000 0%, #003029 70%, #027f6c 100%);
+}
+
+@keyframes below {
+    0% {
+		opacity: 0.5;
+	}
+	100% {
+        opacity: 1;
+	}
 }
 
 #contact h2{

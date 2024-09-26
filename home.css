@@ -29,8 +29,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 5%;
-    margin-left: 5%;
+    /* margin-right: 5%;
+    margin-left: 5%; */
     height: 100vh;
 }
 
@@ -46,6 +46,10 @@
 
 #intro h2 {
     font-size: 2.25rem;
+}
+
+#intro {
+    background: linear-gradient(to bottom, #4f5452 0%,#4f5452 47%,#000000 100%);
 }
 
 

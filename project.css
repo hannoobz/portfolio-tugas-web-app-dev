@@ -41,6 +41,7 @@
     background-color: #111111;
     padding: 1.5rem;
     border-radius: 2rem;
+    animation: glowingFade 1s ease-in-out alternate infinite;
 }
 
 #projects li a {
@@ -56,12 +57,24 @@
 
 
 #projects li:hover {
-    animation: glowingFade 1s ease-in-out alternate infinite;
+    animation: glowingFade2 .75s ease-in-out alternate infinite;
 }
 
 @keyframes glowingFade {
+    0% {
+		box-shadow: 0 0 10px 1px #336B55;
+	}
 	100% {
-		box-shadow: 0 0 15px 2px #05FFC3;
+		box-shadow: 0 0 30px 3px #336B55;
+	}
+}
+
+@keyframes glowingFade2 {
+    0% {
+		box-shadow: 0 0 20px 2px #05ffc3
+	}
+	100% {
+		box-shadow: 0 0 45px 6px #05ffc3;
 	}
 }
 
